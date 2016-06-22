@@ -12,11 +12,13 @@ class CollegesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var collegeName: [String] = ["College 1", "College 2", "College 3", "College 4"]
+    //var collegeName: [String] = ["College 1", "College 2", "College 3", "College 4"]
+    var colleges: [College] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupCollegeName()
         // Do any additional setup after loading the view.
     }
 
@@ -24,13 +26,24 @@ class CollegesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setupCollegeName() {
+        colleges = []
+        
+        let names: [String] = ["The One Academy","Sunway Uni", "APU"]
+        
+        for collegeName in names {
+            let college: College = College(name: collegeName)
+            colleges.append(college)
+        }
+    }
 
 }
 
 extension CollegesViewController : UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return collegeName.count
+        return colleges.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -43,8 +56,8 @@ extension CollegesViewController : UITableViewDataSource {
 //        } else if indexPath.row == 2 {
 //            cell.textLabel?.text = "College 3"
 //        }
-        let name: String = collegeName[indexPath.row]
-        cell.textLabel?.text = name
+        let college: College = colleges[indexPath.row]
+        cell.textLabel?.text = college.name
         
         return cell
     }
@@ -53,10 +66,10 @@ extension CollegesViewController : UITableViewDataSource {
 extension CollegesViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let name: String = collegeName[indexPath.row]
+        let college: College = colleges[indexPath.row]
         
         if let detailsVC: DetailsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsViewController") as? DetailsViewController{
-            detailsVC.thisName = name
+            detailsVC.thisName = college.name
             self.navigationController?.pushViewController(detailsVC, animated: true)
         }
     }
