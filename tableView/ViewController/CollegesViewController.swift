@@ -69,7 +69,7 @@ extension CollegesViewController : UITableViewDelegate {
         let college: College = colleges[indexPath.row]
         
         if let detailsVC: DetailsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsViewController") as? DetailsViewController{
-            detailsVC.thisName = college.name
+            detailsVC.college = college
             self.navigationController?.pushViewController(detailsVC, animated: true)
         }
     }

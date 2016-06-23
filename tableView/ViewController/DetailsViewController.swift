@@ -9,17 +9,17 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    var thisName: String?
-    @IBOutlet weak var collegeName: UILabel!
+    var college: College?
+    @IBOutlet weak var collegeNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.collegeName != nil {
-            self.collegeName.text = thisName
+        if self.college != nil {
+            self.collegeNameLabel.text = college!.name
         }
         else {
-            self.collegeName.text = "Uh oh"
+            self.collegeNameLabel.text = "Uh oh"
         }
         // Do any additional setup after loading the view.
     }

@@ -75,7 +75,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="collegeName" destination="QOy-sH-spQ" id="Z95-F9-3Kb"/>
+                        <outlet property="collegeNameLabel" destination="QOy-sH-spQ" id="bSp-MV-vFY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfI-Oh-4tx" userLabel="First Responder" sceneMemberID="firstResponder"/>
