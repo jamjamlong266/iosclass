@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA72712F1D1B750000A61CDB /* CollegeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72712E1D1B750000A61CDB /* CollegeTableViewCell.swift */; };
 		DAB356FD1D1A45EF00572C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB356FC1D1A45EF00572C56 /* AppDelegate.swift */; };
 		DAB357021D1A45EF00572C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB357001D1A45EF00572C56 /* Main.storyboard */; };
 		DAB357041D1A45EF00572C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB357031D1A45EF00572C56 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA72712E1D1B750000A61CDB /* CollegeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeTableViewCell.swift; sourceTree = "<group>"; };
 		DAB356F91D1A45EF00572C56 /* tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB356FC1D1A45EF00572C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB357011D1A45EF00572C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				DAB3572B1D1A468F00572C56 /* CollegesViewController.swift */,
 				DAB3572D1D1A4C1A00572C56 /* DetailsViewController.swift */,
+				DA72712E1D1B750000A61CDB /* CollegeTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				DAB356FD1D1A45EF00572C56 /* AppDelegate.swift in Sources */,
 				DAB3572E1D1A4C1A00572C56 /* DetailsViewController.swift in Sources */,
 				DAB357311D1A6BFD00572C56 /* College.swift in Sources */,
+				DA72712F1D1B750000A61CDB /* CollegeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
